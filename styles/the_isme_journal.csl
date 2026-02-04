@@ -114,7 +114,7 @@
         <if type="chapter">
           <group delimiter=". " suffix=". ">
             <group prefix=" " delimiter=", ">
-              <!-- <text macro="editor"/> -->
+              <text macro="editor"/>
               <text variable="container-title" font-style="normal"/>
               <text macro="edition"/>
             </group>
