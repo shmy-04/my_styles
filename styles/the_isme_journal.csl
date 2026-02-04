@@ -157,7 +157,7 @@
               <else>
                 <group delimiter=":">
                   <text variable="volume" font-weight="bold"/>
-                  <text variable="issue"/>
+                  <text variable="article-number"/>
                 </group>
               </else>
             </choose>
