@@ -126,20 +126,14 @@
         </if>
         <else-if type="paper-conference">
           <group delimiter=". " suffix=". ">
-            <group prefix=" " delimiter=", ">
-              <group>
-                <text term="in" text-case="capitalize-first" suffix=": "/>
-                <text variable="container-title" form="short" font-style="italic"/>
-              </group>
-              <text macro="edition"/>
+            <group>
+              <text term="in" text-case="capitalize-first" suffix=": "/>
+              <text variable="container-title" form="short" font-style="italic"/>
             </group>
-            <text macro="year-date"/>
-            <group delimiter=", ">
-              <text macro="publisher"/>
-              <group delimiter=" ">
-                <label variable="page" form="short" strip-periods="true"/>
-                <text variable="page"/>
-              </group>
+            <text macro="publisher"/>
+            <group delimiter=" ">
+              <label variable="page" form="short" strip-periods="true"/>
+              <text variable="page"/>
             </group>
           </group>
         </else-if>
