@@ -22,79 +22,6 @@
       <term name="accessed" form="long">date last accessed</term>
     </terms>
   </locale>
-  <macro name="author">
-    <names variable="author">
-      <name sort-separator=" " initialize-with="" name-as-sort-order="all" delimiter=", " delimiter-precedes-last="always"/>
-      <label form="short" strip-periods="true" prefix=" (" suffix=")"/>
-      <substitute>
-        <names variable="editor"/>
-        <names variable="translator"/>
-      </substitute>
-    </names>
-  </macro>
-  <macro name="editor">
-    <text term="in" text-case="capitalize-first" suffix=": "/>
-    <names variable="editor">
-      <name sort-separator=" " initialize-with="" name-as-sort-order="all" delimiter=", " delimiter-precedes-last="always"/>
-      <label form="short" strip-periods="false" prefix=" (" suffix=")"/>
-    </names>
-  </macro>
-  <macro name="edition">
-    <choose>
-      <if is-numeric="edition">
-        <group delimiter=" ">
-          <number variable="edition" form="ordinal"/>
-          <text term="edition" form="short" strip-periods="true"/>
-        </group>
-      </if>
-      <else>
-        <text variable="edition"/>
-      </else>
-    </choose>
-  </macro>
-  <macro name="title">
-    <choose>
-      <if type="book">
-        <group delimiter=", " suffix=". ">
-          <text variable="title"/>
-          <text macro="edition"/>
-        </group>
-      </if>
-      <else>
-        <text variable="title" suffix=". "/>
-      </else>
-    </choose>
-  </macro>
-  <macro name="publisher">
-    <group delimiter=", ">
-      <group delimiter=": ">
-        <text variable="publisher-place"/>
-        <text variable="publisher"/>
-      </group>
-      <text macro="year-date"/>
-    </group>
-  </macro>
-  <macro name="year-date">
-    <date variable="issued">
-      <date-part name="year"/>
-    </date>
-  </macro>
-  <macro name="access">
-    <choose>
-      <if type="article-journal" match="any">
-        <text variable="DOI" prefix="https://doi.org/"/>
-      </if>
-      <else-if type="webpage post post-weblog" match="any">
-        <group delimiter=" " suffix=".">
-          <text variable="URL" suffix=". "/>
-          <group delimiter=", " prefix="(" suffix=")">
-            <date form="text" date-parts="year-month-day" variable="issued"/>
-            <text term="accessed"/>
-          </group>
-        </group>
-      </else-if>
-    </choose>
-  </macro>
   <citation collapse="citation-number">
     <sort>
       <key variable="citation-number"/>
@@ -103,7 +30,7 @@
       <text variable="citation-number"/>
     </layout>
   </citation>
-  <bibliography>
+  <bibliography et-al-min="4" et-al-use-first="3" second-field-align="flush" entry-spacing="0" line-spacing="2">
     <layout delimiter=", ">
       <text variable="title" prefix="title="/>
       <text variable="container-title" prefix=" container-title="/>
