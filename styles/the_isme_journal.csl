@@ -147,20 +147,10 @@
               <text variable="container-title" suffix=" " form="short" strip-periods="true" font-style="italic"/>
               <text macro="year-date"/>
             </group>
-            <choose>
-              <if variable="page">
-                <group delimiter=":">
-                  <text variable="volume" font-weight="bold"/>
-                  <text variable="page"/>
-                </group>
-              </if>
-              <else>
-                <group delimiter=":">
-                  <text variable="volume" font-weight="bold"/>
-                  <text variable="article-number"/>
-                </group>
-              </else>
-            </choose>
+            <group delimiter=":">
+              <text variable="volume" font-weight="bold"/>
+              <text variable="page"/>
+            </group>
           </group>
         </else-if>
         <else-if type="bill book graphic legal_case legislation motion_picture report song" match="any">
