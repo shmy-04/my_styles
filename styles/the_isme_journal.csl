@@ -125,10 +125,12 @@
           </group>
         </if>
         <else-if type="paper-conference">
-          <text macro="editor"/>
           <group delimiter=". " suffix=". ">
             <group prefix=" " delimiter=", ">
-              <text variable="container-title" form="short" font-style="italic"/>
+              <group>
+                <text term="in" text-case="capitalize-first" suffix=": "/>
+                <text variable="container-title" form="short" font-style="italic"/>
+              </group>
               <text macro="edition"/>
             </group>
             <text macro="year-date"/>
