@@ -141,7 +141,7 @@
             <text macro="place"/>
           </group>
           <group delimiter=" " suffix=".">
-            <label variable="page" form="short" strip-periods="true"/>
+            <label variable="page" form="short" strip-periods="false"/>
             <text variable="page"/>
           </group>
         </else-if>
