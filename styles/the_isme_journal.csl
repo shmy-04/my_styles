@@ -74,6 +74,14 @@
       <text macro="year-date"/>
     </group>
   </macro>
+  <macro name="place">
+    <group delimiter=", ">
+      <group delimiter=": ">
+        <text variable="publisher-place" font-style="italic"/>
+      </group>
+      <text macro="year-date"/>
+    </group>
+  </macro>
   <macro name="year-date">
     <date variable="issued">
       <date-part name="year"/>
@@ -125,12 +133,12 @@
           </group>
         </if>
         <else-if type="paper-conference">
-          <group delimiter=". " suffix=". ">
-            <group>
-              <text term="in" text-case="capitalize-first" suffix=": "/>
-              <text variable="container-title" form="short" font-style="italic"/>
-            </group>
-            <text macro="publisher"/>
+          <group suffix=". ">
+            <text term="in" text-case="capitalize-first" suffix=": "/>
+            <text variable="container-title" form="short" font-style="italic"/>
+          </group>
+          <group delimiter=", " suffix=". ">
+            <text macro="place"/>
             <group delimiter=" ">
               <label variable="page" form="short" strip-periods="true"/>
               <text variable="page"/>
