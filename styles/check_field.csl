@@ -30,22 +30,17 @@
       <text variable="citation-number"/>
     </layout>
   </citation>
-  <bibliography et-al-min="4" et-al-use-first="3" second-field-align="flush" entry-spacing="0" line-spacing="2">
+  <bibliography et-al-min="4" et-al-use-first="3">
     <layout delimiter=", ">
-      <text variable="title" prefix="title="/>
-      <text variable="container-title" prefix=" container-title="/>
-      <text variable="event-title" prefix=" event-title="/>
-      <text variable="publisher" prefix=" publisher="/>
-      <text variable="publisher-place" prefix=" publisher-place="/>
-      <text variable="editor" prefix=" editor="/>
-      <text variable="genre" prefix=" genre="/>
-      <text variable="volume" prefix=" volume="/>
-      <text variable="issue" prefix=" issue="/>
-      <text variable="page" prefix=" page="/>
-      <text variable="number" prefix=" number="/>
-      <text variable="collection-title" prefix=" collection-title="/>
-      <text variable="edition" prefix=" edition="/>
-      <text variable="issued" prefix=" issued="/>
+      <text variable="title"/>
+      <text variable="container-title"/>
+      <text variable="event-title"/>
+      <text variable="publisher"/>
+      <text variable="publisher-place"/>
+      <text variable="volume"/>
+      <text variable="issue"/>
+      <text variable="page"/>
+      <text variable="number"/>
     </layout>
   </bibliography>
 </style>
