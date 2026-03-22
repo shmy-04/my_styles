@@ -149,7 +149,7 @@
           <group delimiter=";" suffix=". ">
             <group delimiter=" ">
               <!-- <text variable="container-title" suffix=" " form="short" strip-periods="true" font-style="italic"/> -->
-              <text variable="container-title" suffix=" strip-periods="true" font-style="italic"/>
+              <text variable="container-title" suffix=" " strip-periods="true" font-style="italic"/>
               <text macro="year-date"/>
             </group>
             <group delimiter=":">
