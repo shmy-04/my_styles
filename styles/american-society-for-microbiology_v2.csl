@@ -158,7 +158,7 @@
       <text variable="citation-number"/>
     </layout>
   </citation>
-  <bibliography entry-spacing="1" line-spacing="2" second-field-align="flush">
+  <bibliography entry-spacing="0" line-spacing="1" second-field-align="flush">
     <layout suffix=".">
       <text variable="citation-number" suffix=". "/>
       <text macro="author"/>
