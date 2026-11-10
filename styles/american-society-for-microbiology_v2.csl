@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" default-locale="en-US">
   <info>
-    <title>American Society for Microbiology</title>
+    <title>American Society for Microbiology_v2</title>
     <title-short>ASM</title-short>
     <id>http://www.zotero.org/styles/american-society-for-microbiology</id>
     <link href="http://www.zotero.org/styles/american-society-for-microbiology" rel="self"/>
@@ -63,7 +63,7 @@
         <text term="in" text-case="capitalize-first" prefix=". " suffix=" " font-style="italic"/>
         <names variable="editor" delimiter=", " suffix=", ">
           <name initialize-with="" delimiter=", " name-as-sort-order="all" delimiter-precedes-last="always"/>
-          <label form="short" prefix=" ((" suffix=")"/>
+          <label form="short" prefix=" (" suffix=")"/>
         </names>
       </if>
     </choose>
@@ -147,14 +147,14 @@
   <macro name="title">
     <group delimiter=" ">
       <text variable="title"/>
-      <text variable="version" prefix=" ((" suffix=")"/>
+      <text variable="version" prefix="(" suffix=")"/>
     </group>
   </macro>
   <citation collapse="citation-number">
     <sort>
       <key variable="citation-number"/>
     </sort>
-    <layout prefix=" ((" suffix=")" delimiter=", ">
+    <layout prefix=" (" suffix=")" delimiter=", ">
       <text variable="citation-number"/>
     </layout>
   </citation>
