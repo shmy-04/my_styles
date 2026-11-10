@@ -147,7 +147,7 @@
   <macro name="title">
     <group delimiter=" ">
       <text variable="title"/>
-      <text variable="version" prefix="(" suffix=")"/>
+      <text variable="version" prefix=" (" suffix=")"/>
     </group>
   </macro>
   <citation collapse="citation-number">
